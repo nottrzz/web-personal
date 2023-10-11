@@ -1,0 +1,230 @@
+*,
+html,
+body{
+    margin: 0;
+    padding: 0; 
+    font-family: "Roboto" sans-serif;
+}
+
+.nav{
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.text{
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5em;
+    text-transform: capitalize;
+    color: crimson;
+}
+
+.firstname {
+    color: crimson;
+    text-shadow: 2px 2px lightslategray;
+}
+
+
+
+li .img1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    transform: translateX(-20px);
+}
+
+.img1:hover{
+    width: 80px;
+    height: 80px;
+    border-radius: 750vh;
+    transform: translateX(-11px);
+    transition: all .6 ease-in-out;
+}
+
+.banner{
+    background: url(Screenshot\ 2023-10-08\ 160447.png) no-repeat center center;
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: #fff;
+}
+
+.about-me {
+    transform: translateY(11px);
+    padding: 20px;
+}
+
+:root{
+    --bg-primary: crimson;
+    --bg-secondary: black;
+    --text-primary: white;
+    --text-secondary: black;
+    --icons-bg-primary: black;
+    --icons-bg-secondary: #333;
+}
+.containerl {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-image: linear-gradient(#333 0%, crimson 40%, #333 100%);
+   
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+.card {
+    border: 1px solid white;
+    background-color: #bdbdbd;
+    color: var(--text-secondary);
+    padding: 32px;
+    margin: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.title{
+    font-size: 2em;
+}
+
+.icons{
+    margin-top: 8px;
+    font-size: 25px;
+    color: var(--icons-bg-primary);
+}
+
+.description {
+    margin-top: 8px;
+   font-size: .9em;
+}
+
+.btn1{
+    margin-top: 16px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.btn1:hover{
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transform: rotate(2deg);
+    transition: .3 ease-in-out;
+}
+
+@media screen and (max-width: 470px) {
+    .card{
+        width: 90%;
+    }
+    .title {
+        font-size: 4em;
+    }
+    .icons{
+        font-size: 3em;
+    }
+    .description{
+        /* font-size: 3px; */
+    }
+    .btn1 {
+        padding: 16px;
+        font-size: 1em;
+    }
+}
+
+.maint{
+    box-sizing: border-box;
+    font-family: "poppins" sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    padding: 0 11%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.image img{
+    width: 350px;
+    padding: 0 10%;
+}
+
+.tex h1{
+    font: 58px;
+    color: white;
+    position: relative;
+}
+
+.tex h1::after{
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 4px;
+    background-color: crimson;
+    left: 0;
+    bottom: 2px;
+}
+.tex p{
+    font-size: 15px;
+    color: white;
+    line-height: 28px;
+    margin: 30px 0 45px 0;
+    max-width: 480;
+}
+
+.btn2{
+    padding: 7px 25px;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    color: crimson;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: all .5s ease;
+}
+
+.btn2:hover{
+    background-color: crimson;
+    color: #333;
+}
+
+.btni{
+    background-color: crimson;
+    color: #333;
+}
+
+.btni:hover{
+    color: crimson;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 470px) {
+    .image img{
+        width: 0px;
+        padding: 0 10%;
+    }
+    .title {
+        font-size: 3em;
+    }
+    .icons{
+        font-size: 2em;
+    }
+    .description{
+        font-size: 2em;
+    }
+    .btn4 {
+        padding: 16px;
+        font-size: 1em;
+    }
+}
+
+.contact{
+    background-color: #333 ;
+}
